@@ -169,10 +169,6 @@ a:active {
   font-size: 0;
 }
 
-/* .scroll-list .scroll-item:nth-of-type(even) a {
-  background: url("../images/bg-slash.gif");
-} */
-
 .scroll-list .scroll-item a:hover {
   background-color: #fafaf8;
 }
@@ -495,52 +491,6 @@ a:active {
 
 iframe {
   width: 80;
-}
-
-/* --------------------------------
- * contact
- * -------------------------------- */
-.contact {
-  padding: 80px 0 150px;
-}
-
-.contact-form {
-  width: 50%;
-  margin: 50px auto 0;
-}
-
-.contact-form input[type="text"],
-.contact-form textarea {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  padding: 15px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-
-.contact-form input[type="submit"] {
-  display: block;
-  width: 200px;
-  margin: 40px auto 0;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-}
-
-.contact-form input[type="submit"]:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-.contact-form input[type="text"]:focus,
-.contact-form textarea:focus {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
 }
 
 /* --------------------------------
