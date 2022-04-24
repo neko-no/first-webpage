@@ -1,0 +1,17 @@
+[
+  {
+    "iconPropaty": ["fa-solid", "fa-user-doctor"],
+    "boxTitle": "コンピュータ支援診断",
+    "description": "疑った病気の病変の見落としを防ぐだけでなく，別の病気の病変を提示し， 診断の精度と効率を高めます．"
+  },
+  {
+    "iconPropaty": ["fa-solid", "fa-vr-cardboard"],
+    "boxTitle": "手術シミュレーション",
+    "description": "VR空間でよりリアルな手術体験を提供することにより，手術技術の向上に寄与する事ができます．"
+  },
+  {
+    "iconPropaty": ["fa-solid", "fa-scale-balanced"],
+    "boxTitle": "定量的な評価",
+    "description": "臓器領域内に含まれる画素の平均や分散を求め，それを術後の経過の判断根拠として利用することが出来ます．"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "iconPropaty": ["fa" ,"fa-flag-usa"],
+    "boxTitle": "ENGLISH",
+    "description": "研究とプログラミングなどに必要になると思い勉強を開始しました．TOEICスコア: 280 → 760"
+  },
+  {
+    "iconPropaty": ["fa" ,"fa-pen-ruler"],
+    "boxTitle": "DESIGN",
+    "description": "サムネイルデザインを通して，対象ユーザーの属性を考えるなど，自分の好きなものではなく相手中心のデザインを心掛けています．"
+  },
+  {
+    "iconPropaty": ["fa" ,"fa-code"],
+    "boxTitle": "COMPUTER SCIENCE",
+    "description": "高専から大学院まで，情報工学を学んでいます．授業以外にも，ブロックチェーンなどの技術を学んでいます．"
+  }
+]

@@ -1,0 +1,554 @@
+/* --------------------------------
+ * base
+ * -------------------------------- */
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #151515 url("../images/neko-no-low.jpg") no-repeat fixed left
+    bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Open Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:link a:visited,
+a:hover,
+a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  text-shadow: 1px 2px 3px #808080;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 10px;
+  left: -10%;
+  width: 120%;
+  height: 4px;
+  background: linear-gradient(to bottom right, #00b7ff, #ffffc7);
+}
+
+.heading::before {
+  bottom: 5px;
+}
+
+.heading-sub {
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  text-shadow: 1px 2px 3px #808080;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.site-title-sub::before {
+  transform: rotate(45deg);
+}
+
+.site-title-sub::after {
+  transform: rotate(-45deg);
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+  text-shadow: 1px 2px 3px #808080;
+}
+
+.site-description {
+  display: block;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  text-shadow: 1px 2px 3px #808080;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.buttons .button {
+  margin: 10px;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button-showy {
+  background-color: #f1b400;
+}
+
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+.scroll-list {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.scroll-list .scroll-item a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  transition: backgroud-color 0.1s;
+  text-decoration: none;
+  font-size: 0;
+}
+
+/* .scroll-list .scroll-item:nth-of-type(even) a {
+  background: url("../images/bg-slash.gif");
+} */
+
+.scroll-list .scroll-item a:hover {
+  background-color: #fafaf8;
+}
+
+.scroll-list .date {
+  display: inline-block;
+  width: 19%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.scroll-list .category {
+  display: inline-block;
+  width: 8%;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #d03c56;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+
+.scroll-list .category.univ {
+  background-color: #2c3c53;
+}
+
+.scroll-list .category.grad {
+  background-color: #7c5119;
+}
+
+.scroll-list .title {
+  display: inline-block;
+  width: 73%;
+  padding-left: 15px;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* --------------------------------
+ * Research
+ * -------------------------------- */
+.research {
+  padding: 80px 0;
+  background-color: #383634;
+  color: #fff;
+}
+
+.research-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+
+.research-method-wrapper {
+  width: 80%;
+  margin: 20px auto 70px;
+  table-layout: fixed;
+}
+
+.research-method {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.research-box {
+  display: table-cell;
+}
+
+.research-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  color: #00d5f1;
+  font-size: 8rem;
+  line-height: 142px;
+}
+
+.research-title {
+  margin: 0 20px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.research-text {
+  margin: 0 20px;
+  line-height: 1.5;
+}
+
+/* --------------------------------
+ * Hobbies
+ * -------------------------------- */
+
+.hobbies {
+  margin: 80px auto 120px;
+}
+
+.hobbies-wrapper {
+  padding: 50px;
+}
+
+.item {
+  width: 180px;
+  margin-bottom: 4px;
+  padding: 8px;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.item a {
+  color: #7c5119;
+  text-decoration: none;
+}
+
+.item > a {
+  display: block;
+  margin: -8px -8px -11px;
+  padding: 8px 8px 11px;
+  border-radius: inherit;
+  color: #777;
+  transition: all 0.3s;
+}
+
+.item > a:hover {
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 1);
+  opacity: 0.8;
+}
+
+.item .image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item .category {
+  margin: 15px 9px 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  font-family: "Trebuchet MS", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.item .category::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background: url("../images/neko-no-icon.jpg");
+  background-size: 25px 25px;
+  border-radius: 50%;
+  vertical-align: -5px;
+}
+
+.item .description {
+  margin: 10px;
+  color: #7c5119;
+  line-height: 1.5;
+}
+
+.item-cuisine,
+.item-cuisine .category::before {
+  border-color: #ffc0cb;
+}
+
+.item-lunchbox,
+.item-lunchbox .category::before {
+  border-color: #76c047;
+}
+
+.item-thumbnail,
+.item-thumbnail .category::before {
+  border-color: #fff100;
+}
+
+.item img {
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item:hover img {
+  transform-origin: center;
+  transform: scale(1.05);
+}
+
+.item > a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  left: 8px;
+  display: block;
+  height: 109px;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.item > a:hover::before {
+  opacity: 1;
+}
+
+.item > a::after {
+  content: "MORE";
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  display: block;
+  margin-left: -50px;
+  width: 100px;
+  padding: 8px;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  text-shadow: 1px 2px 10px #000;
+  font-family: "Trebuchet MS", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.item > a:hover::after {
+  left: 50%;
+  opacity: 1;
+}
+
+.item img {
+  height: 109px;
+}
+
+/* --------------------------------
+ * item -> item-m
+ * -------------------------------- */
+.item-m {
+  width: 364px;
+}
+
+.item-m img {
+  height: 146px;
+}
+
+.item-m > a::before {
+  height: 146px;
+}
+
+.item-m > a::after {
+  top: 63px;
+}
+
+/* --------------------------------
+ * item -> item-l
+ * -------------------------------- */
+.item-l {
+  width: 732px;
+}
+
+.item-l img {
+  overflow: hidden;
+  height: 403px;
+}
+
+.item-l > a::before {
+  height: 403px;
+}
+
+.item-l > a::after {
+  top: 190.5px;
+}
+
+/* --------------------------------
+ * skills
+ * -------------------------------- */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+
+.skill-box {
+  display: table-cell;
+}
+
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.skill-text {
+  margin: 0 20px;
+  line-height: 1.5;
+}
+
+iframe {
+  width: 80;
+}
+
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+.contact {
+  padding: 80px 0 150px;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.contact-form input[type="submit"] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  background-color: #fff;
+  padding: 12px 0;
+  font-size: 1.3rem;
+  color: #333;
+}

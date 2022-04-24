@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sigle Page Add</title>
+</head>
+
+<body>
+  <!-- header  -->
+  <header class="header">
+    <p class="site-title-sub">My First Web Page</p>
+    <h1 class="site-title">My First Web Page</h1>
+    <p class="site-description">このページには，以下のコンテンツが含まれています．</p>
+    <div class="buttons">
+      <a class="button button-showy" href="#about">HISTORY</a>
+      <a class="button button-showy" href="#research">RESEARCH</a>
+      <a class="button button-showy" href="#hobbies">HOBBIES</a>
+      <a class="button button-showy" href="#skills">SKILLS</a>
+    </div>
+  </header>
+
+  <!-- about  -->
+  <section class="about" id="about">
+    <h2 class="heading">経歴</h2>
+    <ul class="scroll-list">
+      <li class="scroll-item">
+        <a href="#">
+          <time class="date" datetime="2014-04-01">2014.04.01</time>
+          <span class="category ">高専</span>
+          <span class="title">プログラミング基礎と回路について学ぶ</span>
+        </a>
+      </li>
+      <li class="scroll-item">
+        <a href="#">
+          <time class="date" datetime="2019-04-01">2019.04.01</time>
+          <span class="category univ">大学</span>
+          <span class="title">大学の3年次に編入学．通信とAIについて学ぶ</span>
+        </a>
+      </li>
+      <li class="scroll-item">
+        <a href="#">
+          <time class="date" datetime="2021-04-01">2021.04.01</time>
+          <span class="category grad">大学院</span>
+          <span class="title">研究をもう少しやりたいと思い，大学院に進学</span>
+        </a>
+      </li>
+    </ul>
+    <p class="about-text">
+      2019年まで，高専に在籍しておりました．<br>
+      技術を学ぶ環境が揃っているのにも関わらず，活かしきれずに卒業を迎え，後悔したことを覚えています．
+    </p>
+    <p class="about-text">
+      大学ではそんな思いをしない様に，在学中は勉学の習慣を継続させることを意識しました．
+    </p>
+  </section>
+
+
+  <!-- research  -->
+  <section class="research" id="research">
+    <h2 class="heading">研究内容</h2>
+    <di class="research-method-wrapper">
+      <h3 class="heading-sub">大まかな流れ</h3>
+      <img src="images/method.png" alt="" class="research-method">
+    </di>
+    <div class="research-wrapper">
+      <h3 class="heading-sub">貢献先</h3>
+    </div>
+  </section>
+
+  <!-- hobbies -->
+  <section class="hobbies" id="hobbies">
+    <h2 class="heading">趣味</h2>
+  </section>
+
+  <!-- skills  -->
+  <section class="skills" id="skills">
+    <h2 class="heading">スキルセット</h2>
+
+    <h3 class="heading-sub">MOTION GRAPHICS</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ruteYBFePUA" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </section>
+
+  <!-- footer  -->
+  <footer class="footer">
+    © sample neko-no
+  </footer>
+
+  <script src="./javascript/skill.js"></script>
+  <script src="./javascript/hobby.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
+  <script>
+    window.onload = function () {
+      new Masonry('.hobbies-wrapper', {
+        itemSelector: '.item',
+        columnWidth: 180,
+        gutter: 4
+      });
+    }
+  </script>
+
+</body>
+
+</html>

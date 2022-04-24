@@ -1,0 +1,44 @@
+[
+  {
+    "className": ["item-l", "item-lunchbox"],
+    "imgSrc": "images/lunchbox_1.jpg",
+    "imgAlt": "お弁当",
+    "category": "LUNCH BOX",
+    "description": "花びら餃子とチャーハン"
+  },
+  {
+    "className": ["item-l", "item-lunchbox"],
+    "imgSrc": "images/lunchbox_2.jpg",
+    "imgAlt": "お弁当",
+    "category": "LUNCH BOX",
+    "description": "野菜炒めとキムチ鍋"
+  },
+  {
+    "className": ["item-m", "item-cuisine"],
+    "imgSrc": "images/cuisine_1.jpg",
+    "imgAlt": "料理",
+    "category": "CUISINE",
+    "description": "鶏むね肉のレモンクリーム煮"
+  },
+  {
+    "className": ["item-m", "item-cuisine"],
+    "imgSrc": "images/cuisine_2.jpg",
+    "imgAlt": "料理",
+    "category": "CUISINE",
+    "description": "生春巻き"
+  },
+  {
+    "className": ["item-thumbnail"],
+    "imgSrc": "images/thumbnail_1.jpg",
+    "imgAlt": "サムネイル",
+    "category": "THUMBNAIL",
+    "description": "サムネイル案1"
+  },
+  {
+    "className": ["item-thumbnail"],
+    "imgSrc": "images/thumbnail_2.jpg",
+    "imgAlt": "サムネイル",
+    "category": "THUMBNAIL",
+    "description": "サムネイル案2"
+  }
+]
